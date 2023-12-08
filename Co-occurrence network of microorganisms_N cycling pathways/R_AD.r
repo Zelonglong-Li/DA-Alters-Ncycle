@@ -16,7 +16,7 @@ Family_corr <- rcorr(t(Family), type = 'spearman')
 
 
 r <- Family_corr$r
-r[abs(r) < 0.7] <- 0
+r[abs(r) < 0.8] <- 0
 
 
 p <- Family_corr$P
